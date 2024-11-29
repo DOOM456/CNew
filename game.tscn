@@ -1,0 +1,61 @@
+[gd_scene load_steps=12 format=3 uid="uid://dirwva8lk4qg7"]
+
+[ext_resource type="Script" path="res://южная_африка.gd" id="1_ba57t"]
+[ext_resource type="Texture2D" uid="uid://bu8448d0nvqoo" path="res://South Africa/LS.png" id="2_3h2rt"]
+[ext_resource type="Texture2D" uid="uid://jnncsgcrx66d" path="res://South Africa/ZA-FS.png" id="3_kjd2m"]
+[ext_resource type="Texture2D" uid="uid://bmcu1s07jv8jf" path="res://South Africa/ZA-GT.png" id="4_7onjd"]
+[ext_resource type="Texture2D" uid="uid://jx8gwqk360ph" path="res://South Africa/ZA-MP.png" id="5_3re32"]
+[ext_resource type="Texture2D" uid="uid://cb3ps6res20gy" path="res://South Africa/ZA-EC.png" id="6_uvtsm"]
+[ext_resource type="Texture2D" uid="uid://cbcmq6gdjkbhg" path="res://South Africa/ZA-NL.png" id="7_6vexi"]
+[ext_resource type="Texture2D" uid="uid://cblaqp0gmqr4j" path="res://South Africa/ZA-LP.png" id="8_etqlh"]
+[ext_resource type="Texture2D" uid="uid://ci1mf57pmlv23" path="res://South Africa/ZA-NW.png" id="9_tinwh"]
+[ext_resource type="Texture2D" uid="uid://bwwkub8aelwp0" path="res://South Africa/ZA-NC.png" id="10_peyn8"]
+[ext_resource type="Texture2D" uid="uid://dni5m2ckc5uei" path="res://South Africa/ZA-WC.png" id="11_ak3x2"]
+
+[node name="Game" type="Node2D"]
+
+[node name="ЮАР" type="Parallax2D" parent="."]
+modulate = Color(0.054902, 1, 1, 1)
+script = ExtResource("1_ba57t")
+
+[node name="Ls" type="Sprite2D" parent="ЮАР"]
+position = Vector2(701, 336)
+scale = Vector2(1.08333, 1.08333)
+texture = ExtResource("2_3h2rt")
+
+[node name="Za-fs" type="Sprite2D" parent="ЮАР"]
+position = Vector2(654, 299)
+texture = ExtResource("3_kjd2m")
+
+[node name="Za-gt" type="Sprite2D" parent="ЮАР"]
+position = Vector2(695, 183)
+texture = ExtResource("4_7onjd")
+
+[node name="Za-mp" type="Sprite2D" parent="ЮАР"]
+position = Vector2(774, 170)
+texture = ExtResource("5_3re32")
+
+[node name="Za-ec" type="Sprite2D" parent="ЮАР"]
+position = Vector2(631, 453)
+texture = ExtResource("6_uvtsm")
+
+[node name="Za-nl" type="Sprite2D" parent="ЮАР"]
+position = Vector2(800, 311)
+texture = ExtResource("7_6vexi")
+
+[node name="Za-lp" type="Sprite2D" parent="ЮАР"]
+position = Vector2(734, 85)
+texture = ExtResource("8_etqlh")
+
+[node name="Za-nw" type="Sprite2D" parent="ЮАР"]
+position = Vector2(591, 198)
+texture = ExtResource("9_tinwh")
+
+[node name="Za-nc" type="Sprite2D" parent="ЮАР"]
+modulate = Color(0.054902, 1, 1, 1)
+position = Vector2(418, 309)
+texture = ExtResource("10_peyn8")
+
+[node name="Za-wc" type="Sprite2D" parent="ЮАР"]
+position = Vector2(417, 477)
+texture = ExtResource("11_ak3x2")

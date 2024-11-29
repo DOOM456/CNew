@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://odftmgakf3ng"]
+
+[ext_resource type="Script" path="res://soldier.gd" id="1_mhdjb"]
+[ext_resource type="Texture2D" uid="uid://bybcr76sax5vu" path="res://Игра/soldier.webp" id="1_wqnas"]
+[ext_resource type="Texture2D" uid="uid://dvwexbbnrr3q0" path="res://Игра/soldier idle.jpg" id="2_jgvge"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5sg8i"]
+radius = 11.0
+height = 36.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uoqin"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wqnas")
+}],
+"loop": true,
+"name": &"go",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jgvge")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_mhdjb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_5sg8i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.78814e-06, 1.43051e-06)
+scale = Vector2(0.0238095, 0.0363636)
+sprite_frames = SubResource("SpriteFrames_uoqin")
+animation = &"go"
